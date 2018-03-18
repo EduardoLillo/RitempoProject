@@ -1,0 +1,788 @@
+/* Title:			 Typography stylesheet
+	 Theme URI:	 http://www.casio.com
+â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â” */
+
+
+/* Base japanese hyphenation
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary,
+audio,
+canvas,
+video,
+progress,
+div,
+span,
+p,
+dt,
+dd {
+	word-wrap: break-word;
+}
+
+/* Base typography definitions
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+
+html {
+	font-size: 93.75%;
+	line-height: 1.6;
+	font-family: 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, 'Arial Unicode MS', sans-serif;
+	color: #100d0d;
+	-webkit-text-size-adjust: 100%;
+		 -moz-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100%;
+					text-size-adjust: 100%;
+}
+
+
+/* Print Style Sheet	*/
+@media print {
+
+	html {
+		font-size: 10pt;
+	}
+}
+
+/* Multiâ€language definitions
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+
+/* Japanese (æ—¥æœ¬èªž) */
+:lang(ja) {
+	font-family: 'Hiragino Kaku Gothic Pro', 'ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3', Osaka, Meiryo, 'ãƒ¡ã‚¤ãƒªã‚ª', 'MS PGothic', 'MS Pã‚´ã‚·ãƒƒã‚¯', 'Hiragino Sans GB', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, 'Arial Unicode MS', sans-serif;
+}
+
+/* Chinese (ä¸­æ–‡) */
+:lang(zh) {
+	font-family: STXihei, STHeiti, 'åŽæ–‡ç»†é»‘', 'Microsoft YaHei New', 'Microsoft Yahei', 'å¾®è½¯é›…é»‘', 'Lantinghei SC', Lantinghei, 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, 'Arial Unicode MS', sans-serif;
+}
+
+/* Thai (à¸à¸¥à¸¸à¹ˆà¸¡à¸ à¸²à¸©à¸²à¹€à¸‹à¸¡à¸´à¸•à¸´à¸) */
+:lang(th) {
+	font-family: Thonburi, DokChampa, 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, 'Arial Unicode MS', sans-serif;
+}
+
+/* Arabic (Ù„ØºØ§Øª Ø³Ø§Ù…ÙŠØ©) */
+:lang(ar) {
+	font-family: 'Geeza Pro', GeezaPro, 'Microsoft Sans Serif', MicrosoftSansSerif, 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, 'Arial Unicode MS', sans-serif;
+}
+
+/* Persia (Ù„ØºØ§Øª Ø³Ø§Ù…ÙŠØ©) */
+:lang(fa) {
+	font-family: 'Geeza Pro', GeezaPro, 'Microsoft Sans Serif', MicrosoftSansSerif, 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, 'Arial Unicode MS', sans-serif;
+}
+
+/* Outline color & selected text color
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+
+:focus {
+	outline-color: #003296;
+}
+::-moz-selection {
+	background-color: #d2dbec; background-color: rgba(210, 219, 236, .5);
+}
+::selection {
+	background-color: #d2dbec; background-color: rgba(210, 219, 236, .5);
+}
+
+
+/* Text alignment
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+
+.txt-left {
+	text-align: left;
+}
+.txt-right {
+	text-align: right;
+}
+.txt-center {
+	text-align: center;
+}
+.txt-justify {
+	text-align: justify;
+}
+
+/* PC > 768px */
+@media print, screen and (min-width: 48em) {
+	.txt--left {
+		text-align: left;
+	}
+	.txt--right {
+		text-align: right;
+	}
+	.txt--center {
+		text-align: center;
+	}
+	.txt--justify {
+		text-align: justify;
+	}
+}
+
+
+/* Font sizes
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+
+/* font: xx px / xx px â€” margin bottom: xxpx */
+.xsmall {
+	font-size: .667em !important;
+}
+
+.small {
+	font-size: 0.8em !important;
+}
+
+.xlarge {
+	font-size: 1.333em !important;
+}
+
+.xxlarge {
+	font-size: 2em !important;
+}
+
+.large {
+	font-size: 1.2em !important;
+}
+
+/* font: xx px / xx px â€” margin bottom: xxpx */
+p.normal,
+p {
+	margin-bottom: 1.4em;
+}
+p.xsmall {
+	margin-bottom: 2.6em;
+}
+p.small {
+	margin-bottom: 2.2em;
+}
+p.xlarge {
+	margin-bottom: 1em;
+}
+
+/* font: xx px / xx px â€” margin bottom: xxpx */
+
+.t-size-xx-large {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-size: 1.333em;
+}
+
+.t-size-x-large {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-size: 1.2em;
+}
+.t-size-xx-large + .t-size-x-large {
+	margin-top: -1em;
+}
+
+.t-size-large {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-size: 1.07em;
+}
+
+.t-size-x-large:not(.underline) + .t-size-large {
+	margin-top: -.3em;
+}
+
+.t-size-small,
+.t-size-x-small,
+.t-size-xx-small {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-size: 1em;
+}
+
+.t-size-xx-large.underline:after,
+.t-size-x-large.underline:after,
+.t-size-large.underline:after,
+.t-size-small.underline:after,
+.t-size-x-small.underline:after,
+.t-size-xx-small.underline:after {
+	content: "";
+	clear: both;
+	display: block;
+	margin: 0;
+	height: 0;
+	border: none;
+	border-bottom: .067em solid #d5d4d4;
+	-moz-box-sizing: content-box;
+			 box-sizing: content-box;
+}
+/* SP < 768px */
+@media print, screen and (max-width: 47.9em) {
+	.no-mt {
+		margin-top: 0;
+	}
+}
+
+/* PC > 768px */
+@media print, screen and (min-width: 48em) {
+	.no--mt {
+		margin-top: 0;
+	}
+	.t-size-xx-large {
+		font-size: 2.0em;
+	}
+	.t-size-x-large {
+		font-size: 1.6em;
+	}
+	.t-size-xx-large + .t-size-x-large {
+		margin-top: -1em;
+	}
+	.t-size-large {
+		font-size: 1.333em;
+	}
+	.t-size-small {
+		font-size: 1.133em;
+	}
+	.t-size-x-small {
+		font-size: 1.07em;
+	}
+	.t-size-xx-small {
+		font-size: 1em;
+	}
+}
+
+
+
+/* Headers
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+
+[class*="title-"] {
+	color: #282828;
+	border: none #003296;
+}
+
+.title-side {
+	border-left-style: solid;
+}
+.title-below {
+	border-bottom-style: solid;
+}
+.title-panel {
+	background: #d7d7d7;
+}
+
+.t-size-xx-large {
+	font-weight: normal;
+}
+
+/* .t-size-xx-large (20px) */
+.t-size-xx-large.title-side {
+	padding-left: .35em;
+	border-left-width: .1em;
+}
+.t-size-xx-large.title-below {
+	margin-bottom: .9em;
+	border-bottom-width: .1em;
+}
+.t-size-xx-large.title-panel {
+	padding: .4em .45em;
+}
+
+/* .t-size-xx-large (20px) + .t-size-x-large (18px) */
+.t-size-xx-large + .t-size-x-large.title-side {
+	margin-top: -1.15em;
+	padding-top: .15em;
+}
+.t-size-xx-large + .t-size-x-large.title-panel {
+	margin-top: -1.15em;
+	padding-top: .15em;
+}
+
+/* .t-size-x-large (18px) */
+.t-size-x-large.title-side {
+	padding-left: .39em;
+	border-left-width: .12em;
+}
+.t-size-x-large.title-below {
+	margin-bottom: .89em;
+	border-bottom-width: .12em;
+}
+.t-size-x-large.title-panel {
+	padding: .4em .5em;
+}
+
+/* .t-size-large (16px) */
+.t-size-large.title-side {
+	padding-left: .437em;
+	border-left-width: .125em;
+}
+.t-size-large.title-below {
+	margin-bottom: .875em;
+	border-bottom-width: .125em;
+}
+.t-size-large.title-panel {
+	padding: .4em .56em;
+}
+
+/* .t-size-small, .t-size-x-small, .t-size-xx-small (15px) */
+.t-size-small.title-side,
+.t-size-x-small.title-side,
+.t-size-xx-small.title-side {
+	padding-left: .467em;
+	border-left-width: .133em;
+}
+.t-size-small.title-below,
+.t-size-x-small.title-below,
+.t-size-xx-small.title-below {
+	margin-bottom: .867em;
+	border-bottom-width: .133em;
+}
+.t-size-small.title-panel,
+.t-size-x-small.title-panel,
+.t-size-xx-small.title-panel {
+	padding: .4em .6em;
+}
+.title-link a {
+	color: #100d0d;
+	text-decoration: none;
+}
+.title-link a:hover {
+	color: #100d0d;
+	border-bottom: 2px solid #003296;
+}
+.title-link a:active {
+	color: #003296;
+}
+.title-link {
+	display: inline-block;
+	padding-right: 1em;
+}
+.title-link + span,
+.title-link + span {
+	display: inline-block;
+}
+
+
+/* PC > 768px */
+@media print, screen and (min-width: 48em) {
+
+	/* .t-size-xx-large (30px) */
+	.t-size-xx-large.title-side {
+		padding-left: .33em;
+		border-left-width: .17em;
+	}
+	.t-size-xx-large.title-below {
+		margin-bottom: .933em;
+		border-bottom-width: .067em;
+	}
+	.t-size-xx-large.title-panel {
+		padding: .4em .5em;
+	}
+
+	/* .t-size-xx-large (30px) + .t-size-x-large (24px) */
+	.t-size-xx-large + .t-size-x-large.title-side {
+		padding-top: .22em;
+		margin-top: -1.22em;
+	}
+	.t-size-xx-large + .t-size-x-large.title-side {
+		padding-top: .25em;
+		margin-top: -1.25em;
+	}
+	.t-size-xx-large + .t-size-x-large.title-panel {
+		padding-top: .23em;
+		margin-top: -1.23em;
+	}
+
+	/* .t-size-x-large (24px) */
+	.t-size-x-large.title-side {
+		padding-left: .415em;
+		border-left-width: .21em;
+	}
+	.t-size-x-large.title-below {
+		margin-bottom: ;
+		border-bottom-width: .083em;
+	}
+	.t-size-x-large.title-panel {
+		padding: .4em .625em;
+	}
+
+	/* .t-size-large (20px) */
+	.t-size-large.title-side {
+		padding-left: .5em;
+		border-left-width: .25em;
+	}
+	.t-size-large.title-below {
+		margin-bottom: .9em;
+		border-bottom-width: .1em;
+	}
+	.t-size-large.title-panel {
+		padding: .4em.75em;
+	}
+
+	/* .t-size-small (17px) */
+	.t-size-small.title-side {
+		padding-left: .59em;
+		border-left-width: .3em;
+	}
+	.t-size-small.title-below {
+		margin-bottom: .9em;
+		border-bottom-width: .12em;
+	}
+	.t-size-small.title-panel {
+		padding: .4em .882em;
+	}
+
+	/* .t-size-x-small (16px) */
+	.t-size-x-small.title-side {
+		padding-left: .625em;
+		border-left-width: .3125em;
+	}
+	.t-size-x-small.title-below {
+		margin-bottom: .875em;
+		border-bottom-width: .125em;
+	}
+	.t-size-x-small.title-panel {
+		padding: .4em .937em;
+	}
+
+	/* .t-size-xx-small (15px) */
+	.t-size-xx-small.title-side {
+		padding-left: .667em;
+		border-left-width: .333em;
+	}
+	.t-size-xx-small.title-panel {
+		padding: .4em 1em;
+	}
+}
+
+
+/* Links
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+
+a {
+	color: #003296;
+	-webkit-tap-highlight-color: rgba(0, 50, 150, .2);
+}
+a:hover,
+a:focus {
+	color: #003296;
+	text-decoration: none;
+}
+a:active {
+	color: #4065b0;
+}
+a:active,
+a:hover {
+	outline-color: rgba(0, 50, 150, .25);
+}
+
+
+/* Note
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+.note,
+.list-symbol {
+	padding: 0;
+	list-style-type: none;
+	font-size: .8em;
+}
+
+.note li:before {
+	content: '\002A';
+	padding-right: .25em;
+	color: #ac3030 ;
+}
+
+:lang(ja) .note li:before,
+:lang(ja).note li:before {
+	content: '\203B';
+}
+
+.symbol {
+	display: inline;
+	color: #ac3030;
+	font-size: .667em;
+	vertical-align: super;
+}
+
+.list-symbol li,
+.note li {
+	padding-left: 0;
+}
+.list-symbol .symbol {
+	font-size: 1em ;
+	vertical-align: baseline;
+	margin-right: .25em;
+}
+
+/*
+.symbol.en {
+	display: inline;
+}
+
+[lang="ja"] .symbol {
+	display: inline;
+}
+
+[lang="ja"] .symbol.en {
+	display: none;
+}
+
+.symbol.en,
+[lang="en"] .symbol {
+	display: inline;
+	margin-bottom: 1.4em;
+}
+*/
+
+
+
+
+/* Panel
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+[class*="panel-"] {
+	position: relative;
+	padding: .933em .533em;
+	border: 1px solid;
+}
+[class*="grid-w"] [class*="panel-"] {
+	padding: .933em .366em;
+}
+[class*="panel-"] .title {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+
+.panel-blue {
+	border-color: #003296;
+}
+.panel-red {
+	border-color: #c81d1d;
+}
+.panel-grey {
+	border-color: #4c4a4a;
+}
+.panel-grey-light {
+	border-color: #abaaaa;
+}
+
+/* PC > 768px */
+@media print, screen and (min-width: 48em) {
+	[class*="panel-"] {
+		padding: .933em;
+	}
+	[class*="grid-w"] [class*="panel-"] {
+		padding: .933em .633em;
+	}
+}
+
+
+/* Text
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+.txt-blue {
+	color: #003296;
+}
+.txt-red {
+	color: #c81d1d;
+}
+.txt-grey {
+	color: #4c4a4a;
+}
+.txt-grey-light {
+	color: #abaaaa;
+}
+
+.label-primary {
+	color: #1774c3;
+}
+.label-sec {
+	color: #939393;
+}
+.label-alert {
+	color: #c81d1d;
+}
+.label-warning {
+	color: #d9a904;
+}
+.label-warning-alt {
+	color: #8039b7;
+}
+
+[class*="label-"] > mark{
+	display: inline-block;
+	margin-right: .5em;
+	line-height: 1.2;
+	padding: .2em .3em 0;
+	font-size: .8em;
+	color: #fff;
+}
+.label-primary > mark {
+	background: #1774c3;
+}
+.label-sec > mark {
+	background: #707070;
+}
+.label-alert > mark {
+	background: #c81d1d;
+}
+.label-warning > mark {
+	background: #008080;
+}
+.label-warning-alt > mark {
+	background: #8039b7;
+}
+
+
+/* Textâ€level semantics
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+b,
+strong {
+	font-weight: bold;
+}
+i,
+em,
+dfn {
+	font-style: italic;
+}
+:lang(ja) i,
+:lang(zh) i,
+i:lang(ja),
+i:lang(zh),
+i :lang(ja),
+i :lang(zh),
+:lang(ja) em,
+:lang(zh) em,
+em:lang(ja),
+em:lang(zh),
+em :lang(ja),
+em :lang(zh),
+:lang(ja) dfn,
+:lang(zh) dfn,
+dfn:lang(ja),
+dfn:lang(zh),
+dfn :lang(ja),
+dfn :lang(zh) {
+	font-style: normal;
+	font-weight: 600;
+}
+mark {
+	color: #000;
+	background: #ff0;
+}
+small {
+	font-size: 80%;
+}
+sub,
+sup {
+	position: relative;
+	font-size: 75%;
+	line-height: 0;
+	vertical-align: baseline;
+}
+sup {
+	top: -.5em;
+}
+sub {
+	bottom: -.25em;
+}
+
+
+/* Ruby
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+
+rp,
+rt {
+	font-size: .5em;
+}
+rp {
+	color: #666;
+}
+rt {
+	color: #808080;
+}
+
+
+/* Grouping content
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+hr {
+	clear: both;
+	margin: 1em 0 .934em;
+	height: 0;
+	border: none;
+	border-bottom: .067em solid #d5d4d4;
+	-moz-box-sizing: content-box;
+			 box-sizing: content-box;
+}
+hr.bold {
+	margin-top: 1.37em;
+	margin-bottom: 1.37em;
+	border-bottom: .26em solid #d5d4d4;
+}
+[class*="grid"] .underline:after,
+[class*="grid"] hr {
+	margin-left: -3.25%;
+	margin-right: -3.25%;
+}
+
+/* PC > 768px */
+@media print, screen and (min-width: 48em) {
+	[class*="grid"] .underline:after {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	[class*="grid"] hr {
+		margin-left: -1.5%;
+		margin-right: -1.5%;
+	}
+	[class*="grid-n"] hr {
+		margin-left: -2.25%;
+		margin-right: -2.25%;
+	}
+}
+
+blockquote {
+	margin: 1.5em 0;
+	padding: .5em .75em;
+	border-left: .625em solid #efefef;
+}
+address {
+	font-style: normal;
+}
+
+
+/* Coding content
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+pre {
+	overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+	font-family: Menlo, Monaco, 'Andale Mono', Consolas, 'Lucida Console', 'Courier New', Courier, monospace !important;
+	font-size: .8em;
+}
+
+/* ----- break ----- */
+br.breakpc,
+br.breaksp {
+	display: none;
+}
+
+/* SP < 768px */
+@media print, screen and (max-width: 47.9em) {
+	br.breaksp {
+		display: block;
+	}
+}
+
+/* PC > 768px */
+@media print, screen and (min-width: 48em) {
+	br.breakpc {
+		display: block;
+	}
+}

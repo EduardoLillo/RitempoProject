@@ -1,0 +1,5 @@
+[10-Jul-2017 18:28:12 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/ritempoc/public_html/storage/framework/views/fa09ea7510fb5f970b3db2a3db40876ec20ef6e7.php on line 146
+[10-Jul-2017 18:28:27 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ritempoc/public_html/storage/framework/views/fa09ea7510fb5f970b3db2a3db40876ec20ef6e7.php on line 146
+[20-Jul-2017 14:07:41 America/Chicago] PHP Warning:  require(/home/ritempoc/public_html/prueba/../bootstrap/autoload.php): failed to open stream: No such file or directory in /home/ritempoc/public_html/prueba/index.php on line 22
+[20-Jul-2017 14:07:41 America/Chicago] PHP Fatal error:  require(): Failed opening required '/home/ritempoc/public_html/prueba/../bootstrap/autoload.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/ritempoc/public_html/prueba/index.php on line 22
+[24-Jul-2017 16:21:05 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/ritempoc/public_html/prueba/ritempo/storage/framework/views/08d32fe28f1e008e1f8d7921cb8c7348a3f192d8.php on line 39
